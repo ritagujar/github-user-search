@@ -26,7 +26,7 @@ const Profile = () => {
         Back to Search
       </Link>
       <ShowUsers userData={userData} />
-      <Repositories pageLoading={pageLoading} repositories={repositoryData} />
+      <Repositories repositories={repositoryData} />
       <Pagination username={username} setRepositories={setReposotoryData} />
     </div>
   );

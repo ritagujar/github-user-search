@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const InputSection = styled.div`
+  @media screen and (max-width: 650px) {
+    max-width: 500px;
+  }
   /* form {
     display: flex;
     flex-direction: column;
@@ -18,6 +21,10 @@ export const InputSection = styled.div`
     border-radius: 0.2rem;
     padding-left: 1rem;
     /* width: 100%; */
+
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
   }
 
   input:focus {
@@ -39,6 +46,9 @@ export const InputSection = styled.div`
     color: var(--color-black);
     font-family: var(--font-base);
     background-color: var(--color-crimson);
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
   }
 
   button:hover {

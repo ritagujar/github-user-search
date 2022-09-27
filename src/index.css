@@ -40,8 +40,14 @@
 
 .card {
   padding: 1rem;
-  border: 1px dotted var(--color-golden);
+  border: 1.5px dotted var(--color-golden);
   margin: 0.7rem 0;
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    max-width: 600px;
+  }
 }
 
 .active {

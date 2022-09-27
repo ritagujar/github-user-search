@@ -9,10 +9,9 @@ export const NavbarSection = styled.div`
   height: 3.5rem;
   background-color: var(--color-black);
 
-  /* @media screen and (max-width: 650px) {
-    display: flex;
-    flex-direction: column;
-  } */
+  @media screen and (max-width: 400px) {
+    padding: 0 0.2rem;
+  }
 `;
 export const Heading = styled(Link)`
   color: var(--color-golden);
@@ -25,6 +24,11 @@ export const Heading = styled(Link)`
   @media screen and (max-width: 900px) {
     font-size: 1.6rem;
   }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.2rem;
+    letter-spacing: 0rem;
+  }
 `;
 
 export const Logo = styled.p`
@@ -35,9 +39,8 @@ export const Logo = styled.p`
   a {
     font-size: 1.8rem;
     color: var(--color-golden);
-  }
-  @media screen and (max-width: 900px) {
-    font-size: 1.6rem;
-    /* display: none; */
+    @media screen and (max-width: 400px) {
+      font-size: 1.2rem;
+    }
   }
 `;

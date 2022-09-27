@@ -2,7 +2,7 @@ import React from "react";
 import ShowRepos from "../ShowRepositories/ShowRepos";
 import { RepoContainer } from "./styles";
 
-const Repositories = ({ repositories, pageLoading }) => {
+const Repositories = ({ repositories }) => {
   // console.log(repositories);
 
   return (

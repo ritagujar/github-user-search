@@ -33,15 +33,19 @@ const useRepositories = (username, setRepositories) => {
   }, [page, size, username, pageNumber, setRepositories, newer]);
 
   useEffect(() => {
-    fetch(`https://api.github.com/users/${username}`)
-      .then((res) => res.json())
-      .then((data) => {
+    const url = `https://api.github.com/users/${username}`;
+
+    const getPage = async () => {
+      try {
+        const { data } = await axios.get(url);
         const numberOfPage = data.public_repos / size;
         setPageNumber(Math.ceil(numberOfPage));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    getPage();
   }, [size, username, page, pageNumber]);
 
   return { pageLoading, page, setPage, pageNumber, setNewer, newer };
