@@ -37,3 +37,9 @@
   overflow: hidden;
   padding: 0 2rem;
 }
+
+.card {
+  padding: 1rem;
+  border: 1px dotted var(--color-golden);
+  margin: 0.7rem 0;
+}
