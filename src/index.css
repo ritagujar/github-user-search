@@ -17,9 +17,9 @@
   --color-golden-light: #e6dab2;
   --color-black: #0c0c0c;
   --color-black-card: #0e1214;
-  --color-gray: #545454;
+
   --color-crimson: #f5efdb;
-  --color-grey: #aaaaaa;
+  --color-gray: #aaaaaa;
   --color-white: #ffffff;
 }
 * {
@@ -42,4 +42,12 @@
   padding: 1rem;
   border: 1px dotted var(--color-golden);
   margin: 0.7rem 0;
+}
+
+.active {
+  background-color: var(--color-golden);
+}
+
+.none {
+  background-color: var(--color-white);
 }

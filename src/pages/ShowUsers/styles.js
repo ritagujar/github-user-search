@@ -16,7 +16,8 @@ export const ImageSection = styled.div`
     border-radius: 50%;
   }
 
-  p {
+  a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;

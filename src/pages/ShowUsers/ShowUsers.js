@@ -11,13 +11,13 @@ const ShowUsers = ({ userData }) => {
     <HeaderSection>
       <ImageSection>
         <img src={avatar_url} alt="profile" />
-        <p>
+        <a href={url}>
           <span>
             {" "}
             <FiLink2 />
           </span>
           {url}
-        </p>
+        </a>
       </ImageSection>
       <BioSeaction>
         <h1>{name}</h1>
@@ -34,7 +34,7 @@ const ShowUsers = ({ userData }) => {
               {" "}
               <AiOutlineTwitter />
             </span>{" "}
-            https://twitter.com/{twitter_username}
+            {twitter_username}
           </p>
         )}
       </BioSeaction>

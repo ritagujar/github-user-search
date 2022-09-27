@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import Pagination from "../../compoents/Pagination/Pagination";
 import useRepositories from "../../Hooks/useRepositories";
 import useSearch from "../../Hooks/useSearch";
 import Repositories from "../Repository/Repositories";
@@ -19,6 +20,7 @@ const Profile = () => {
     <div className="container ">
       <ShowUsers userData={userData} />
       <Repositories pageLoading={pageLoading} repositories={repositoryData} />
+      <Pagination username={username} setRepositories={setReposotoryData} />
     </div>
   );
 };
