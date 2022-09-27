@@ -3,7 +3,8 @@ import ShowRepos from "../ShowRepositories/ShowRepos";
 import { RepoContainer } from "./styles";
 
 const Repositories = ({ repositories, pageLoading }) => {
-  console.log(repositories);
+  // console.log(repositories);
+
   return (
     <div className="card">
       <RepoContainer>
