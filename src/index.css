@@ -72,3 +72,10 @@
   transition: opacity 0.2s ease-in;
   outline: none;
 }
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16rem;
+}

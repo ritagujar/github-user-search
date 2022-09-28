@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+// import UserNotFound from "../../compoents/NotFound/UserNotFound";
 import Loader from "../../compoents/Loader/Loader";
 import Pagination from "../../compoents/Pagination/Pagination";
 import useRepositories from "../../Hooks/useRepositories";
@@ -15,8 +16,6 @@ const Profile = () => {
   const [userData] = useSearch(username);
   const { pageLoading } = useRepositories(username, setReposotoryData);
 
-  // console.log(userData);
-
   if (pageLoading) return <Loader />;
 
   return (
@@ -26,7 +25,7 @@ const Profile = () => {
         Back to Search
       </Link>
       <ShowUsers userData={userData} />
-      <Repositories repositories={repositoryData} />
+      <Repositories repositories={repositoryData} pageLoading={pageLoading} />
       <Pagination username={username} setRepositories={setReposotoryData} />
     </div>
   );

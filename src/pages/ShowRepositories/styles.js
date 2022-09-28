@@ -13,20 +13,32 @@ export const RepoSection = styled.div`
     margin: 2px;
     background-color: var(--color-golden-light);
     color: var(--color-black);
+
+    @media screen and (max-width: 650px) {
+      padding: 2px;
+      font-size: 0.7rem;
+    }
   }
 
   a {
     text-decoration: none;
     h2 {
       color: var(--color-black);
-
       font-weight: 600;
+
+      @media screen and (max-width: 650px) {
+        font-size: 1.2rem;
+      }
     }
   }
 
   p {
     margin: 10px 0;
     font-weight: 400;
+
+    @media screen and (max-width: 650px) {
+      font-size: 0.8rem;
+    }
   }
 `;
 

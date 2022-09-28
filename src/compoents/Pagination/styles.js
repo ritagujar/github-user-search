@@ -23,6 +23,12 @@ export const PaginationSection = styled.div`
       opacity: 0.5;
       background: var(--color-gray);
     }
+
+    @media screen and (max-width: 650px) {
+      height: 1.5rem;
+      width: 1.5rem;
+      font-size: 0.6rem;
+    }
   }
 `;
 
@@ -52,6 +58,12 @@ export const ButtonContainer = styled.div`
       pointer-events: none;
       opacity: 0.5;
       background: var(--color-gray);
+    }
+
+    @media screen and (max-width: 650px) {
+      height: 2rem;
+      width: 6rem;
+      font-size: 0.8rem;
     }
   }
 `;

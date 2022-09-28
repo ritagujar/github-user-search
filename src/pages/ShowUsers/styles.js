@@ -6,6 +6,7 @@ export const HeaderSection = styled.div`
   margin: 0.7rem 0;
   display: flex;
   flex-direction: row;
+
   /* padding-left: 3rem; */
   /* justify-content: space-evenly; */
 
@@ -42,7 +43,6 @@ export const ImageSection = styled.div`
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      width: 100%;
     }
   }
 `;
