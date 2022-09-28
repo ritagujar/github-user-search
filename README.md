@@ -1,6 +1,6 @@
 # GitHub User Search
 
-Live [https://github-api-shammi.vercel.app](https://github-user-search-mocha.vercel.app/).
+## [Live](https://github-user-search-mocha.vercel.app/).
 
 ## Technologies Used
 
