@@ -1,4 +1,4 @@
-# GitHub User Search
+## GitHub User Search
 
 ## [Live](https://github-user-search-mocha.vercel.app/).
 
