@@ -2,7 +2,7 @@
 
 ### [Live](https://github-user-search-mocha.vercel.app/).
 
-## Step 1 - Dependencies
+### Step 1 - Dependencies
 
 You will need:
 
